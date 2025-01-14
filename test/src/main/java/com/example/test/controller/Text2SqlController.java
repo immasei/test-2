@@ -14,10 +14,7 @@ public class Text2SqlController {
     @GetMapping("/tables")
     public ResponseEntity<String> getTables() {
         System.out.println(tableAnalyzerService.listTables("opaltravel"));
-        System.out.println(tableAnalyzerService.describeTable("opaltravel", "users"));
-//        System.out.println(tableAnalyzerService.describeTable());
+        System.out.println(tableAnalyzerService.analyzeTable("opaltravel.opalcards", 100, 100));
         return ResponseEntity.ok("tables");
     }
-
-
 }
