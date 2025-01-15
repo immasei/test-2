@@ -53,6 +53,12 @@
             <artifactId>postgresql</artifactId>
             <version>42.7.4</version> <!-- Use the latest compatible version -->
         </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>33.3.0-jre</version> <!-- Use the latest stable version -->
+        </dependency>
+
 
     </dependencies>
 
