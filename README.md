@@ -2,7 +2,6 @@
 
 ## Table of Contents
 
-- [Sketch-Based Hairstyle Image Retrieval (SBIR)](#sketch-based-hairstyle-image-retrieval-sbir)
 - [1. Set up Environment](#1-set-up-environment)
 - [2. Run the program](#2-run-the-program)
   - [2.1 Backend (FastAPI)](#21-backend-fastapi)
@@ -75,7 +74,13 @@
 
 ```bash
   cd SBIR/backend
+```
+
+```bash
   pip install -r requirements.txt
+```
+
+```bash
   python3 -m uvicorn main:app --reload --port 8000
 ```
 
@@ -87,7 +92,13 @@
 
 ```bash
   cd SBIR/frontend
+```
+
+```bash
   npm install
+```
+
+```bash
   npm run dev
 ```
 
@@ -105,17 +116,17 @@
 
 - User can sketch on the right panel
 
-- Brush mode: Default drawing mode
+- **Brush mode**: Default drawing mode
 
-- Eraser mode: Remove sketch strokes
+- **Eraser mode**: Remove sketch strokes
 
-- Clear: Erase entire canvas and return to brush mode
+- **Clear**: Erase entire canvas and return to brush mode
 
-- Color palette: Choose brush color and auto-return to brush mode
+- **Color palette**: Choose brush color and auto-return to brush mode
 
-- Search: Sends sketch to backend, retrieves top 10 similar hairstyles
+- **Search**: Sends sketch to backend, retrieves top 10 similar hairstyles
 
-- Download: Downloads current sketch + results
+- **Download**: Downloads current sketch + results
 
 ### 3.2 Left Panel: Search Results
 
